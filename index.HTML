@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/177/177043.png">
+    <link rel="stylesheet" href="stylepractice.css">
+    <script src="scriptshallaaa.js" defer></script>
+</head>
+<body>
+
+    
+    <div id="welcome-message" class="quiz-container-top">
+        <h1 style="text-align: center; color: white; font-family: 'Courier New', Courier, monospace;">
+            WELCOME TO LOVEEEEE QUIZ!
+        </h1>
+    </div>
+
+    
+    <div id="quiz-form" class="quiz-container">
+        <form onsubmit="return validateName()">
+            <br><br><br>
+            <label for="name"><strong>Who are you?</strong><br><br></label>
+            <input type="text" name="name" id="name"><br><br>
+            <input type="submit" value="Enter">
+            <div id="error-message" style="color: red; display: none;">No, you aren't my 'baby!' only she is allowed...!</div>
+            <br><br><br><br>
+        </form>
+    </div>
+
+    
+    <div id="rules-form" class="quiz-container" style="display: none;">
+        <h2>Rules</h2>
+        <p>Rule 1: I love you</p>
+        <p>Rule 2: I miss you</p>
+        <p>Rule 3: I neeeeed youuu so baddd</p>
+        <button onclick="startQuiz()" class="arrow-btn">&#8594; Start the quiz</button>
+    </div>
+
+    <!-- Quiz Question -->
+    <div id="quiz-question-form" class="quiz-container" style="display: none;">
+        <h2>Question number 1: When did we start dating?</h2>
+        <form id="quiz-question">
+            <label><input type="radio" name="date" value="March 6 2024"> March 6 2024</label><br>
+            <label><input type="radio" name="date" value="February 26 2024"> February 26 2024</label><br>
+            <label><input type="radio" name="date" value="November 5 2024"> November 5 2024</label><br>
+            <label><input type="radio" name="date" value="December 12 2023"> December 12 2023</label><br>
+            <input type="submit" value="Submit Answer">
+        </form>
+        <div id="hearts-container"></div>
+        <div id="emoji-container"></div>
+        <button id="next-btn" style="display: none; margin-top: 15px;">Next Question</button>
+    </div>
+
+    <!-- Quiz Question 2  -->
+    <div id="quiz-question-2" class="quiz-container" style="display: none;">
+        <h2>Question number 2: Where did we go for our first date?</h2>
+        <form id="question-2-form">
+            <label><input type="radio" name="place" value="Trinoma"> Trinoma</label><br>
+            <label><input type="radio" name="place" value="Sm North"> Sm North</label><br>
+            <label><input type="radio" name="place" value="Fairview Terraces"> Fairview Terraces</label><br>
+            <label><input type="radio" name="place" value="Sm nova"> Sm nova</label><br>
+            <input type="submit" value="Submit Answer">
+        </form>
+        <div id="hearts-container-2"></div>
+        <div id="emoji-container-2"></div>
+        <button id="next-btn-2" style="display: none; margin-top: 15px;">Next Question</button>
+
+        
+    </div>
+    <!-- Quiz Question 3  -->
+    <div id="quiz-question-3" class="quiz-container" style="display: none;">
+        <h2>Question number 3: When did you first had a crush on me?</h2>
+        <form id="question-3-form">
+            <label><input type="radio" name="Grade" value="Grade 9"> Grade 9 </label><br>
+            <label><input type="radio" name="Grade" value="Grade 11"> Grade 11 </label><br>
+            <label><input type="radio" name="Grade" value="Grade 10"> Grade 10 </label><br>
+            <label><input type="radio" name="Grade" value="College 1st year"> Collete 1st year</label><br>
+            <input type="submit" value="Submit Answer">            
+        </form>
+        <div id="hearts-container-3"></div>
+        <div id="emoji-container-3"></div>
+        <button id="next-btn-3" style="display: none; margin-top:15px;">Next Question</button>
+
+    </div>
+
+    <!-- Quiz Question 4  -->
+    <div id="quiz-question-4" class="quiz-container" style="display: none;">
+        <h2>Question number 4: How are you feeling?</h2>
+        <form id="question-4-form">
+            <label><input type="radio" name="Emotion" value="Great"> Great <span class="quote"></span></label><br>
+            <label><input type="radio" name="Emotion" value="Bad"> Bad <span class="quote"></span></label><br>
+            <label><input type="radio" name="Emotion" value="Good"> Good <span class="quote"></span></label><br>
+            <label><input type="radio" name="Emotion" value="Worried"> Worried <span class="quote"></span></label><br>
+            <input type="submit" value="Submit Answer">            
+        </form>
+        <div id="hearts-container-4"></div>
+        <div id="emoji-container-4"></div>
+        <div id="quote-container"></div> 
+
+    
+    
+    </div>
+
+    
+    <div id="letter-page" class="quiz-container" style="display: none;">
+        <h2>My Letter to You</h2>
+        <div id="letter-content">
+        </div>
+    </div>
+    
+    <audio id="bgMusic" loop>
+        <source src="pasilyo.mp3" type="audio/mpeg">
+      </audio>
+      
+      <button id="play-music-btn" onclick="document.getElementById('bgMusic').play()">🎵 Play Music</button>
+      
+
+</body>
+</html>

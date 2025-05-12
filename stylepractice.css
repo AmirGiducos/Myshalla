@@ -1,0 +1,88 @@
+body {
+        background-image: url(https://wallpapers.com/images/hd/aesthetic-heart-background-kcabdu9ln9hsxp6m.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .quiz-container-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.75);
+        border: 3px solid rgba(0, 0, 0, 0.75);
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        z-index: 1;
+    }
+    
+    .quiz-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.75);
+        border: 2px solid black;
+        border-radius: 20px;
+        width: 400px;
+        padding: 40px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+    
+    .quiz-container button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .quiz-container button:hover {
+        background-color: #444;
+    }
+    
+    .arrow-btn {
+        font-size: 32px;
+        color: white;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    
+    .arrow-btn:hover {
+        color: #FF0000;
+    }
+    
+
+  #play-music-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background-color: #ffb6c1;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  #play-music-btn:hover {
+    background-color: #ff69b4;
+  }
